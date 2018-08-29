@@ -1,0 +1,8 @@
+{
+  "name": "sedona-nuxt-firebase",
+  "version": "1.0.0",
+  "description": "Верстка адаптивного шаблона \"Sedona\" при помощи Nuxt с хостингом на Firebase",
+  "repository": "https://github.com/newbornfrontender/sedona-nuxt-firebase.git",
+  "author": "Infant Frontender <newbornfrontender@gmail.com>",
+  "license": "MIT"
+}
