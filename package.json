@@ -15,5 +15,9 @@
   "license": "MIT",
   "dependencies": {
     "nuxt": "^1.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-loader": "^2.1.0"
   }
 }
