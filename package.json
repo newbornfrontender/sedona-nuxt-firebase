@@ -4,5 +4,8 @@
   "description": "Верстка адаптивного шаблона \"Sedona\" при помощи Nuxt с хостингом на Firebase",
   "repository": "https://github.com/newbornfrontender/sedona-nuxt-firebase.git",
   "author": "Infant Frontender <newbornfrontender@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "nuxt": "^1.4.2"
+  }
 }
