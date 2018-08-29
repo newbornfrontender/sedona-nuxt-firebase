@@ -43,7 +43,7 @@ $ yarn generate
 ### Форматирование кода
 
 ```bash
-$ yarn prettier
+$ yarn format
 ```
 
 ### Линтинг и исправление ошибок
