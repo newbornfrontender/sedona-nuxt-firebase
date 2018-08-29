@@ -40,6 +40,12 @@ $ yarn start
 $ yarn generate
 ```
 
+### Форматирование кода
+
+```bash
+$ yarn prettier
+```
+
 ### Линтинг и исправление ошибок
 
 ```bash
