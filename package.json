@@ -7,8 +7,10 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "format": "prettier --no-editorconfig --list-different --write .js,.vue",
-    "lint": "eslint --fix --ext .js,.vue"
+    "format": "prettier --no-editorconfig --list-different .js,.jsx,.vue",
+    "format:write": "prettier --no-editorconfig --list-different --write .js,.jsx,.vue",
+    "lint": "eslint --ext .js,.jsx,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.vue --ignore-path .gitignore ."
   },
   "repository": "https://github.com/newbornfrontender/sedona-nuxt-firebase.git",
   "author": "Infant Frontender <newbornfrontender@gmail.com>",
