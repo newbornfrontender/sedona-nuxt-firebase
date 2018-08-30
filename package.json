@@ -8,6 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.jsx,.vue --ignore-path .gitignore .",
+    "lint:check": "eslint --print-config . | eslint-config-prettier-check",
     "lint:fix": "eslint --fix --ext .js,.jsx,.vue --ignore-path .gitignore ."
   },
   "repository": "https://github.com/newbornfrontender/sedona-nuxt-firebase.git",
