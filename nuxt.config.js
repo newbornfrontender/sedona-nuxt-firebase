@@ -1,16 +1,20 @@
 module.exports = {
   head: {
     title: 'nuxt-vuetify',
-    meta: [{
-      charset: 'utf-8',
-    }, {
-      name: 'viewport',
-      content: 'width=device-width, initial-scale=1',
-    }, {
-      hid: 'description',
-      name: 'description',
-      content: 'Nuxt project with Vuetify',
-    }],
+    meta: [
+      {
+        charset: 'utf-8',
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Nuxt project with Vuetify',
+      },
+    ],
   },
   loading: {
     color: '#3B8070',
@@ -24,12 +28,13 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /node_modules/,
         });
-      };
+      }
     },
+    /* eslint-disable-next-line no-dupe-keys */
     extend(config) {
-      config.module.rules.find(({
-        loader,
-      }) => loader === 'vue-loader').options.cssModules = {
+      config.module.rules.find(
+        ({ loader }) => loader === 'vue-loader',
+      ).options.cssModules = {
         localIdentName: '[name]_[local]_[hash:base64:5]',
         camelCase: 'only',
       };

@@ -8,7 +8,7 @@
       </ul>
     </header>
     <main>
-      <nuxt/>
+      <nuxt />
     </main>
   </div>
 </template>
