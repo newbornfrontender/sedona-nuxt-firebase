@@ -7,8 +7,6 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "format": "prettier --no-editorconfig --list-different .js,.jsx,.vue",
-    "format:write": "prettier --no-editorconfig --list-different --write .js,.jsx,.vue",
     "lint": "eslint --ext .js,.jsx,.vue --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ext .js,.jsx,.vue --ignore-path .gitignore ."
   },
@@ -21,7 +19,10 @@
   "devDependencies": {
     "babel-eslint": "^9.0.0",
     "eslint": "^5.4.0",
+    "eslint-config-prettier": "^3.0.1",
     "eslint-loader": "^2.1.0",
-    "eslint-plugin-vue": "^5.0.0-beta.3"
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-vue": "^5.0.0-beta.3",
+    "prettier": "^1.14.2"
   }
 }
