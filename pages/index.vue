@@ -1,7 +1,8 @@
 <template>
-  <div id="app">
+  <section>
     <p>{{ msg }}</p>
-  </div>
+    <p>123</p>
+  </section>
 </template>
 
 <script>

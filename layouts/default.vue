@@ -1,14 +1,25 @@
 <template>
-  <div class="main">
-    <header>
-      <ul>
-        <li>
-          <nuxt-link to="/">Home page</nuxt-link>
-        </li>
-      </ul>
-    </header>
-    <main>
-      <nuxt />
-    </main>
-  </div>
+  <section>
+    <site-header
+      :block="['list', 'nav-list']"
+      :elem="['item', 'link']"
+      :mod="{ 'active': isActive }"
+    />
+    <site-main />
+  </section>
 </template>
+
+<script>
+import SiteHeader from '~/components/SiteHeader.vue';
+import SiteMain from '~/components/SiteMain.vue';
+
+export default {
+  components: {
+    SiteHeader,
+    SiteMain,
+  },
+  data: () => ({
+    isActive: true,
+  }),
+};
+</script>
