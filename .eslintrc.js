@@ -9,11 +9,13 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
-    // 'eslint:recommended',
     'plugin:vue/recommended',
     'plugin:prettier/recommended',
   ],
   plugins: [
     'vue',
   ],
+  rules: {
+    'import/no-unresolved': [2, { ignore: ['~'] }],
+  },
 };
