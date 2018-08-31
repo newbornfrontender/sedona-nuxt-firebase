@@ -10,9 +10,7 @@
 </template>
 
 <script>
-/* eslint-disable-next-line import/no-unresolved */
 import SiteHeader from '~/components/SiteHeader.vue';
-/* eslint-disable-next-line import/no-unresolved */
 import SiteMain from '~/components/SiteMain.vue';
 
 export default {
