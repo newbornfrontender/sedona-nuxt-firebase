@@ -1,6 +1,6 @@
 module.exports = {
   head: {
-    title: 'nuxt-vuetify',
+    title: 'Седона',
     meta: [
       {
         charset: 'utf-8',
@@ -12,32 +12,23 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'Nuxt project with Vuetify',
+        content: 'Седона',
       },
     ],
   },
   loading: {
-    color: '#3B8070',
+    color: '#000',
   },
   build: {
     extend(config, ctx) {
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
-          test: /\.(jsx?|vue)$/,
+          test: /\.(js(x)|vue)$/,
           loader: 'eslint-loader',
           exclude: /node_modules/,
         });
       }
-    },
-    /* eslint-disable-next-line no-dupe-keys */
-    extend(config) {
-      config.module.rules.find(
-        ({ loader }) => loader === 'vue-loader',
-      ).options.cssModules = {
-        localIdentName: '[name]_[local]_[hash:base64:5]',
-        camelCase: 'only',
-      };
     },
   },
 };
