@@ -1,7 +1,7 @@
 <template>
   <section>
     <div>{{ msg }}</div>
-    <div :class="$style.testStyle">Test</div>
+    <div class="testStyle">Test</div>
   </section>
 </template>
 
@@ -25,7 +25,7 @@ export default {
 };
 </script>
 
-<style module>
+<style lang="postcss">
 .testStyle {
   color: red;
 }
