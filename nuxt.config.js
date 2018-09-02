@@ -22,7 +22,7 @@ module.exports = {
     color: '#81b3d2',
   },
   modules: [
-    '~/modules/vue-loader',
+    // '~/modules/vue-loader',
     '~/modules/eslint-loader',
     /* prettier-ignore */
     ['nuxt-mq', {
