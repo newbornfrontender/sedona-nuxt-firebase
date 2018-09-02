@@ -15,7 +15,9 @@
   "author": "Infant Frontender <newbornfrontender@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "nuxt": "^1.4.2"
+    "nuxt": "^1.4.2",
+    "nuxt-mq": "^1.0.5",
+    "vue": "^2.5.17"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
