@@ -1,7 +1,7 @@
 <template>
   <section>
     <div>{{ msg }}</div>
-    <div class="testStyle">Test</div>
+    <div css-module="testStyle">Test</div>
   </section>
 </template>
 
