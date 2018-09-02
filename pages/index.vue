@@ -1,14 +1,11 @@
 <template>
-  <section>
-    <p>{{ msg }}</p>
-    <p>123</p>
-  </section>
+  <section>{{ msg }}</section>
 </template>
 
 <script>
 export default {
   data: () => ({
-    msg: 'Nuxt',
+    msg: 'Главная',
   }),
 };
 </script>
