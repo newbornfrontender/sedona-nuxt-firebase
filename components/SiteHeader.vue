@@ -1,46 +1,18 @@
 <template>
-  <div>
-    <header>
-      <ul
-        :class="[
-          block[0],
-          block[1],
-        ]"
-      >
-        <li
-          :class="[
-            `${block[0]}__${elem[0]}`,
-            `${block[1]}__${elem[0]}`,
-          ]"
-        >
-          <nuxt-link
-            :class="[
-              `${block[0]}__${elem[1]}`,
-              mod[0] ? `${block[0]}__${elem[1]}--${mod[0]}` : '',
-            ]"
-            to="/"
-          >Home page</nuxt-link>
-        </li>
-      </ul>
-    </header>
-  </div>
+  <header>
+    <ul>
+      <li>
+        <nuxt-link to="/">Главная</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/gallery">Фото и видео</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/review-form">Форма отзыва</nuxt-link>
+      </li>
+      <li>
+        <a href="#">HTML Academy</a>
+      </li>
+    </ul>
+  </header>
 </template>
-
-<script>
-export default {
-  props: {
-    block: {
-      type: Array,
-      default: () => [],
-    },
-    elem: {
-      type: Array,
-      default: () => [],
-    },
-    mod: {
-      type: Object,
-      default: () => {},
-    },
-  },
-};
-</script>
