@@ -34,4 +34,14 @@ module.exports = {
       },
     }],
   ],
+  build: {
+    extend(config) {
+      config.module.rules.push({
+        enforce: 'pre',
+        test: /\.(html|vue)$/,
+        loader: 'posthtml-loader',
+        exclude: /node_modules/,
+      });
+    },
+  },
 };
