@@ -17,18 +17,31 @@ module.exports = {
     ],
   },
   loading: {
-    color: '#000',
+    color: '#81b3d2',
   },
-  build: {
-    extend(config, ctx) {
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js(x)|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /node_modules/,
-        });
-      }
-    },
-  },
+  modules: [
+    '~/modules/eslint-loader',
+    /* prettier-ignore */
+    ['nuxt-mq', {
+      breakpoints: {
+        xs: 0,
+        sm: 768,
+        md: 992,
+        lg: 1200,
+      },
+    }],
+  ],
+  // build: {
+  //   extend(config, ctx) {
+  //     if (ctx.isDev && ctx.isClient) {
+  //       config.module.rules.push({
+  //         enforce: 'pre',
+  //         test: /\.(js(x)|vue)$/,
+  //         loader: 'eslint-loader',
+  //         // use: 'eslint-loader',
+  //         exclude: /node_modules/,
+  //       });
+  //     }
+  //   },
+  // },
 };
