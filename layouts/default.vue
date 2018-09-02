@@ -1,25 +1,21 @@
 <template>
   <section>
-    <site-header
-      :block="['list', 'nav-list']"
-      :elem="['item', 'link']"
-      :mod="{ 'active': isActive }"
-    />
+    <site-header />
     <site-main />
+    <site-footer />
   </section>
 </template>
 
 <script>
 import SiteHeader from '~/components/SiteHeader.vue';
 import SiteMain from '~/components/SiteMain.vue';
+import SiteFooter from '~/components/SiteFooter.vue';
 
 export default {
   components: {
     SiteHeader,
     SiteMain,
+    SiteFooter,
   },
-  data: () => ({
-    isActive: true,
-  }),
 };
 </script>
