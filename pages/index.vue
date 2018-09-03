@@ -1,5 +1,7 @@
 <template>
-  <section>{{ msg }}</section>
+  <section>
+    <div class="test">{{ msg }}</div>
+  </section>
 </template>
 
 <script>
