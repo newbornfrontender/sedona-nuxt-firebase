@@ -1,5 +1,5 @@
 module.exports = {
-  // mode: 'spa',
+  mode: 'universal',
   analyze: true,
   head: {
     title: 'Седона',
