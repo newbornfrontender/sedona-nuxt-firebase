@@ -9,7 +9,8 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.jsx,.vue --ignore-path .gitignore .",
     "lint:check": "eslint --print-config . | eslint-config-prettier-check",
-    "lint:fix": "eslint --fix --ext .js,.jsx,.vue --ignore-path .gitignore ."
+    "lint:fix": "eslint --fix --ext .js,.jsx,.vue --ignore-path .gitignore .",
+    "test": "ava ./test/*.js --serial --verbose --color"
   },
   "repository": "https://github.com/newbornfrontender/sedona-nuxt-firebase.git",
   "author": "Infant Frontender <newbornfrontender@gmail.com>",
@@ -20,6 +21,7 @@
     "vue": "^2.5.17"
   },
   "devDependencies": {
+    "ava": "^0.25.0",
     "babel-eslint": "^9.0.0",
     "eslint": "^5.4.0",
     "eslint-config-airbnb-base": "^13.1.0",
